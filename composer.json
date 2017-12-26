@@ -1,0 +1,17 @@
+{
+    "name": "i80586/parking",
+    "type": "library",
+    "description": "Simple parking with using OOP patterns",
+    "authors": [
+        {
+            "name": "Rasim Ashurov",
+            "email": "rasim.ashurov@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "parking": "src"
+        }
+    }
+}

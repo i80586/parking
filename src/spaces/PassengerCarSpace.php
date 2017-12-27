@@ -10,7 +10,7 @@ namespace parking\spaces;
 class PassengerCarSpace extends ParkingSpace
 {
     
-    public function __construct(cars\PassengerCar $car, Ticket $ticket)
+    public function __construct(\parking\cars\PassengerCar $car, \parking\Ticket $ticket)
     {
         $this->car = $car;
         $this->ticket = $ticket;

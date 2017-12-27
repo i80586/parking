@@ -1,23 +1,19 @@
 <?php
 
-namespace parking;
+namespace parking\spaces;
 
 /**
  * Description of ParkingSpaces
  *
  * @author tux
  */
-class ParkingSpace
+abstract class ParkingSpace
 {
-
-    private $ticket;
-    private $car;
     
-    public function __construct(cars\Car $car, Ticket $ticket)
-    {
-        $this->car = $car;
-        $this->ticket = $ticket;
-    }
+    protected $ticket;
+    protected $car;
+    
+    abstract public function __construct(cars\Car $car, Ticket $ticket);
     
     public function getCar()
     {

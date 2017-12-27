@@ -10,8 +10,8 @@
         }
     ],
     "autoload": {
-        "psr-0": {
-            "parking": "src"
+        "psr-4": {
+            "parking\\": "src/parking/"
         }
     }
 }

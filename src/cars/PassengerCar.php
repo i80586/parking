@@ -10,7 +10,7 @@ namespace parking\cars;
 class PassengerCar extends Car
 {
     
-    public function getSpacesCount(): int
+    public function getSpaceSize(): int
     {
         return 1;
     }

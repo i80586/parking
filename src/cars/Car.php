@@ -10,6 +10,6 @@ namespace parking\cars;
 abstract class Car
 {
     
-    abstract public function getSpacesCount(): int;
+    abstract public function getSpaceSize(): int;
     
 }

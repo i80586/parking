@@ -7,11 +7,17 @@ namespace parking\spaces;
  *
  * @author tux
  */
-abstract class ParkingSpace
+class ParkingSpace
 {
     
     protected $ticket;
     protected $car;
+    
+    public function __construct(\parking\cars\Car $car, \parking\Ticket $ticket)
+    {
+        $this->car = $car;
+        $this->ticket = $ticket;
+    }
     
     public function getCar()
     {
